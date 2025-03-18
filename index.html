@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia Sẻ Tài Liệu Học Tập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Chia Sẻ Tài Liệu Học Tập</h1>
+        <button id="loginBtn">Đăng nhập</button>
+    </header>
+
+    <main>
+        <section id="uploadSection">
+            <h2>Tải lên tài liệu</h2>
+            <input type="file" id="fileInput">
+            <input type="text" id="docTitle" placeholder="Nhập tên tài liệu">
+            <button onclick="uploadFile()">Tải lên</button>
+        </section>
+
+        <section id="searchSection">
+            <h2>Tìm kiếm tài liệu</h2>
+            <input type="text" id="searchInput" placeholder="Nhập từ khóa...">
+            <button onclick="searchFiles()">🔍 Tìm kiếm</button>
+        </section>
+
+        <section id="fileList">
+            <h2>📂 Danh sách tài liệu</h2>
+            <ul id="fileContainer">
+                <!-- Tài liệu sẽ được hiển thị ở đây -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
